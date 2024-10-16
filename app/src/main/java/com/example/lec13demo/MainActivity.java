@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        // Handle item selection.
+        if (item.getItemId() == R.id.create_new)
+            Toast.makeText(MainActivity.this,"Create clicked", Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(MainActivity.this,"Open or File clicked ", Toast.LENGTH_LONG).show();
+        return true;
     }
 }
